@@ -1,0 +1,2 @@
+dataset,nodes,train_edges,test_edges,full_auc,incr_auc,full_ap,incr_ap,max_pred_diff,mean_pred_diff,full_ms,incr_ms,speedup
+Bitcoin,6263,41844,500,0.457478,0.604638,0.518905,0.599487,0.48144895,0.12118421,7.7638,0.3280,23.67

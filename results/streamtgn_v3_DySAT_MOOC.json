@@ -1,0 +1,42 @@
+{
+  "dataset": "MOOC",
+  "method": "DySAT",
+  "config": "config/DySAT.yml",
+  "use_memory": false,
+  "num_nodes": 7047,
+  "batch_size": 600,
+  "test_edges": 61763,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "n_batches": 98,
+  "tgl": {
+    "per_batch_ms": 62.15385089115221,
+    "stages_ms": {
+      "sample": 14.489573711643413,
+      "mfg": 26.885892207525213,
+      "mail": 0.00817290678316233,
+      "embed": 20.499256648579422,
+      "predict": 0.26091598734563715,
+      "update": 0.010039429275356993
+    },
+    "recompute_ms": 61.88289547453121,
+    "fixed_ms": 0.27095541662099415,
+    "ap": 0.9869725179609828,
+    "auc": 0.9928577609881015
+  },
+  "dirty_tracking": {
+    "avg_dirty_per_batch": 180.28155339805826,
+    "global_affected_ratio": 0.025582737817235458,
+    "batch_root_affected_ratio": 0.17594156481169587
+  },
+  "streamtgn_c1_inference": {
+    "per_batch_ms": 11.158728881488628,
+    "speedup": 5.569975895216892,
+    "batch_root_affected": 0.17594156481169587
+  },
+  "streamtgn_c2_index": {
+    "per_node_ms": 0.034379386374739564,
+    "tgl_refresh_ms": 242.2715357827897,
+    "stream_refresh_ms": 6.197969180510087,
+    "speedup": 39.08885777370887
+  }
+}

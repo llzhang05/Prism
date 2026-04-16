@@ -1,0 +1,48 @@
+{
+  "dataset": "GDELT",
+  "method": "TGN",
+  "num_nodes": 16682,
+  "affected_ratio": 0.07968340013263746,
+  "avg_dirty": 1329.2784810126582,
+  "tgl_stages_ms": {
+    "Msg. Computation": 15.807831211935117,
+    "Msg. Aggregation": 0.2379221252248257,
+    "Emb. Generation": 9.191159771967538,
+    "Mem. Update": 2.54564411655257,
+    "Prediction": 1.1517476243308828
+  },
+  "tgl_total_ms": 28.934304850010935,
+  "stream_stages_ms": {
+    "Msg. Computation": 1.2596217396898213,
+    "Msg. Aggregation": 0.018958443904697263,
+    "Emb. Generation": 0.7323828617926902,
+    "Mem. Update": 2.54564411655257,
+    "Prediction": 1.1517476243308828
+  },
+  "stream_total_ms": 5.708354786270661,
+  "speedup": 5.0687642820663,
+  "stage_names": [
+    "Msg. Computation",
+    "Msg. Aggregation",
+    "Emb. Generation",
+    "Mem. Update",
+    "Prediction"
+  ],
+  "scalable_stages": [
+    "Msg. Computation",
+    "Msg. Aggregation",
+    "Emb. Generation"
+  ],
+  "fixed_stages": [
+    "Mem. Update",
+    "Prediction"
+  ],
+  "raw_stages_ms": {
+    "sample": 12.95700263750704,
+    "mfg": 2.8508285744280757,
+    "mail": 0.2379221252248257,
+    "embed": 9.191159771967538,
+    "predict": 1.1517476243308828,
+    "update": 2.54564411655257
+  }
+}

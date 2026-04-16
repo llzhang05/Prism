@@ -1,0 +1,82 @@
+{
+  "dataset": "Wiki-Talk",
+  "num_nodes": 1094018,
+  "batch_size": 600,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "per_node_ms": 0.009842264543270427,
+  "avg_dirty_per_batch": 2495.4761904761904,
+  "affected_ratio": 0.0022810193163880213,
+  "ap": 0.9335934751800604,
+  "auc": 0.9198057870370369,
+  "baselines": {
+    "Full-Recomp (TGL)": {
+      "batch_ms": 20.88133811573439,
+      "refresh_ms": 10767.614571099626,
+      "batch_speedup": 1.0,
+      "index_speedup": 1.0
+    },
+    "StreamTGN (ours)": {
+      "batch_ms": 6.49878088899401,
+      "refresh_ms": 24.561136828099368,
+      "batch_speedup": 3.213116194007697,
+      "index_speedup": 438.4004961358649
+    },
+    "Random-Refresh": {
+      "batch_ms": 6.5315877798472615,
+      "refresh_ms": 24.561136828099368,
+      "batch_speedup": 3.196977338368205,
+      "index_speedup": 438.4004961358649
+    },
+    "Oracle": {
+      "batch_ms": 6.49878088899401,
+      "refresh_ms": 2.2013415160931826,
+      "batch_speedup": 3.213116194007697,
+      "index_speedup": 4891.3875890595045
+    }
+  },
+  "periodic": {
+    "K=1": {
+      "avg_batch_ms": 10767.614571099626,
+      "refresh_ms": 10767.614571099626,
+      "avg_stale_nodes": 0.0,
+      "avg_stale_ratio": 0.0,
+      "index_speedup": 1.0
+    },
+    "K=5": {
+      "avg_batch_ms": 2156.0551237702034,
+      "refresh_ms": 2153.522914219925,
+      "avg_stale_nodes": 4990.952380952381,
+      "avg_stale_ratio": 0.0045620386327760425,
+      "index_speedup": 5.0
+    },
+    "K=10": {
+      "avg_batch_ms": 1079.6101928540254,
+      "refresh_ms": 1076.7614571099625,
+      "avg_stale_nodes": 11229.642857142857,
+      "avg_stale_ratio": 0.010264586923746096,
+      "index_speedup": 10.0
+    },
+    "K=20": {
+      "avg_batch_ms": 541.3877273959365,
+      "refresh_ms": 538.3807285549813,
+      "avg_stale_nodes": 23707.02380952381,
+      "avg_stale_ratio": 0.021669683505686203,
+      "index_speedup": 20.0
+    },
+    "K=50": {
+      "avg_batch_ms": 218.4542481210832,
+      "refresh_ms": 215.35229142199253,
+      "avg_stale_nodes": 61139.166666666664,
+      "avg_stale_ratio": 0.05588497325150652,
+      "index_speedup": 50.0
+    }
+  },
+  "tgl_stages_ms": {
+    "sample": 7.403742946401428,
+    "mfg": 3.0908685979209367,
+    "mail": 0.19854816454875318,
+    "embed": 7.0229164690156525,
+    "predict": 1.6940849114067946,
+    "update": 1.4711770264408257
+  }
+}

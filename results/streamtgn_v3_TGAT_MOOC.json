@@ -1,0 +1,42 @@
+{
+  "dataset": "MOOC",
+  "method": "TGAT",
+  "config": "config/TGAT.yml",
+  "use_memory": false,
+  "num_nodes": 7047,
+  "batch_size": 600,
+  "test_edges": 61763,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "n_batches": 98,
+  "tgl": {
+    "per_batch_ms": 44.148172574992074,
+    "stages_ms": {
+      "sample": 18.024601422402323,
+      "mfg": 9.285635561967382,
+      "mail": 0.00889819799637308,
+      "embed": 16.54866140107719,
+      "predict": 0.26944492544446674,
+      "update": 0.010931066104343959
+    },
+    "recompute_ms": 43.867796583443265,
+    "fixed_ms": 0.2803759915488107,
+    "ap": 0.9764528582048987,
+    "auc": 0.9836292894121921
+  },
+  "dirty_tracking": {
+    "avg_dirty_per_batch": 180.28155339805826,
+    "global_affected_ratio": 0.025582737817235458,
+    "batch_root_affected_ratio": 0.1762379233082171
+  },
+  "streamtgn_c1_inference": {
+    "per_batch_ms": 8.011545361522154,
+    "speedup": 5.51056888313045,
+    "batch_root_affected": 0.1762379233082171
+  },
+  "streamtgn_c2_index": {
+    "per_node_ms": 0.024370998101912924,
+    "tgl_refresh_ms": 171.74242362418036,
+    "stream_refresh_ms": 4.393641395673991,
+    "speedup": 39.08885777370887
+  }
+}

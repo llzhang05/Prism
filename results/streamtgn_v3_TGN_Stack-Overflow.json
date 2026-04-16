@@ -1,0 +1,42 @@
+{
+  "dataset": "Stack-Overflow",
+  "method": "TGN",
+  "config": "config/TGN.yml",
+  "use_memory": true,
+  "num_nodes": 2584164,
+  "batch_size": 600,
+  "test_edges": 50000,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "n_batches": 79,
+  "tgl": {
+    "per_batch_ms": 20.597182874438133,
+    "stages_ms": {
+      "sample": 8.147928533674795,
+      "mfg": 2.998907166191294,
+      "mail": 1.1413067202024822,
+      "embed": 6.325488320634335,
+      "predict": 1.2001308459269848,
+      "update": 0.7834212878082372
+    },
+    "recompute_ms": 18.61363074070291,
+    "fixed_ms": 1.983552133735222,
+    "ap": 0.9782163854752779,
+    "auc": 0.970230291005291
+  },
+  "dirty_tracking": {
+    "avg_dirty_per_batch": 3501.8809523809523,
+    "global_affected_ratio": 0.0013551310800633985,
+    "batch_root_affected_ratio": 0.2404370292285828
+  },
+  "streamtgn_c1_inference": {
+    "per_batch_ms": 6.458958212187655,
+    "speedup": 3.1889326726982876,
+    "batch_root_affected": 0.2404370292285828
+  },
+  "streamtgn_c2_index": {
+    "per_node_ms": 0.010340905967057171,
+    "tgl_refresh_ms": 26722.596927454328,
+    "stream_refresh_ms": 36.21262163640004,
+    "speedup": 737.9359935816807
+  }
+}

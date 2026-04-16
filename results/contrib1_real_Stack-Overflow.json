@@ -1,0 +1,202 @@
+{
+  "dataset": "Stack-Overflow",
+  "num_nodes": 2584164,
+  "total_edges": 2000000,
+  "test_edges": 50000,
+  "train_edges": 500000,
+  "batch_large": 600,
+  "batch_small": 20,
+  "gnn_arch": "transformer_attention",
+  "gnn_layers": 1,
+  "memory_dim": 100,
+  "model": "GeneralModel (real TGN pipeline)",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "results": [
+    {
+      "strategy": "small_batch_B20",
+      "auc": 0.9785892348,
+      "ap": 0.9845306078462865,
+      "elapsed_s": 57.078737895935774,
+      "rebuild_count": 0,
+      "rebuild_time_s": 0,
+      "overhead_pct": 0,
+      "auc_gain": 0.007569101000000078,
+      "total_overhead_s": 0,
+      "efficiency": Infinity
+    },
+    {
+      "strategy": "periodic_12000_B600",
+      "auc": 0.9713613638,
+      "ap": 0.979223327747436,
+      "elapsed_s": 8.280469346791506,
+      "rebuild_count": 4,
+      "rebuild_time_s": 5.867657039314508,
+      "overhead_pct": 70.86140644416602,
+      "auc_gain": 0.0003412300000000812,
+      "total_overhead_s": 5.867657039314508,
+      "efficiency": 5.815438729867306e-05
+    },
+    {
+      "strategy": "auc_monitor_full_drop0.005_B600",
+      "auc": 0.9712711044,
+      "ap": 0.9789856334636332,
+      "elapsed_s": 19.964057117700577,
+      "rebuild_count": 16,
+      "rebuild_time_s": 17.357376970350742,
+      "overhead_pct": 86.94313419370708,
+      "auc_gain": 0.00025097060000001115,
+      "total_overhead_s": 17.357376970350742,
+      "efficiency": 1.4459016499365674e-05
+    },
+    {
+      "strategy": "auc_monitor_full_drop0.02_B600",
+      "auc": 0.971220732,
+      "ap": 0.979067903341521,
+      "elapsed_s": 10.785543117672205,
+      "rebuild_count": 6,
+      "rebuild_time_s": 8.267422277480364,
+      "overhead_pct": 76.65281374596817,
+      "auc_gain": 0.00020059820000006834,
+      "total_overhead_s": 8.267422277480364,
+      "efficiency": 2.4263693478737367e-05
+    },
+    {
+      "strategy": "auc_monitor_full_drop0.05_B600",
+      "auc": 0.9711519980000001,
+      "ap": 0.9790510042110865,
+      "elapsed_s": 2.8050176054239273,
+      "rebuild_count": 0,
+      "rebuild_time_s": 0.0,
+      "overhead_pct": 0.0,
+      "auc_gain": 0.00013186420000010912,
+      "total_overhead_s": 0.0,
+      "efficiency": Infinity
+    },
+    {
+      "strategy": "periodic_6000_B600",
+      "auc": 0.971117765,
+      "ap": 0.9788622452381257,
+      "elapsed_s": 12.962970647960901,
+      "rebuild_count": 8,
+      "rebuild_time_s": 10.613229241222143,
+      "overhead_pct": 81.87343417993176,
+      "auc_gain": 9.763120000005898e-05,
+      "total_overhead_s": 10.613229241222143,
+      "efficiency": 9.19900981888303e-06
+    },
+    {
+      "strategy": "periodic_3000_B600",
+      "auc": 0.9710618305999998,
+      "ap": 0.9788550605053854,
+      "elapsed_s": 22.07489674538374,
+      "rebuild_count": 16,
+      "rebuild_time_s": 19.83141416311264,
+      "overhead_pct": 89.836950957697,
+      "auc_gain": 4.169679999987963e-05,
+      "total_overhead_s": 19.83141416311264,
+      "efficiency": 2.102563118137971e-06
+    },
+    {
+      "strategy": "periodic_60000_B600",
+      "auc": 0.9710337327999999,
+      "ap": 0.9787885405166781,
+      "elapsed_s": 2.4426231272518635,
+      "rebuild_count": 0,
+      "rebuild_time_s": 0.0,
+      "overhead_pct": 0.0,
+      "auc_gain": 1.359899999997527e-05,
+      "total_overhead_s": 0.0,
+      "efficiency": Infinity
+    },
+    {
+      "strategy": "no_rebuild_B600",
+      "auc": 0.9710201338,
+      "ap": 0.9788430589464021,
+      "elapsed_s": 2.4386451318860054,
+      "rebuild_count": 0,
+      "rebuild_time_s": 0,
+      "overhead_pct": 0,
+      "auc_gain": 0.0,
+      "total_overhead_s": 0,
+      "efficiency": 0
+    },
+    {
+      "strategy": "periodic_30000_B600",
+      "auc": 0.9709992152,
+      "ap": 0.9787796962594633,
+      "elapsed_s": 3.7777574993669987,
+      "rebuild_count": 1,
+      "rebuild_time_s": 1.4209195487201214,
+      "overhead_pct": 37.612778188070855,
+      "auc_gain": -2.091859999997503e-05,
+      "total_overhead_s": 1.4209195487201214,
+      "efficiency": -1.472187501313304e-05
+    },
+    {
+      "strategy": "auc_monitor_full_drop0.01_B600",
+      "auc": 0.9708425761999999,
+      "ap": 0.9784830106958788,
+      "elapsed_s": 15.482727162539959,
+      "rebuild_count": 11,
+      "rebuild_time_s": 12.8350470662117,
+      "overhead_pct": 82.89913612419491,
+      "auc_gain": -0.0001775576000000445,
+      "total_overhead_s": 12.8350470662117,
+      "efficiency": -1.3833809808727963e-05
+    },
+    {
+      "strategy": "auc_monitor_full_drop0.03_B600",
+      "auc": 0.9708350606,
+      "ap": 0.9783858881098075,
+      "elapsed_s": 2.688169691711664,
+      "rebuild_count": 0,
+      "rebuild_time_s": 0.0,
+      "overhead_pct": 0.0,
+      "auc_gain": -0.0001850731999999411,
+      "total_overhead_s": 0.0,
+      "efficiency": 0
+    },
+    {
+      "strategy": "auc_monitor_partial_drop0.02_B600",
+      "auc": 0.9702708957999999,
+      "ap": 0.9781340806773839,
+      "elapsed_s": 5.886631801724434,
+      "rebuild_count": 6,
+      "rebuild_time_s": 3.0287496261298656,
+      "overhead_pct": 51.45131763197117,
+      "auc_gain": -0.0007492380000000409,
+      "total_overhead_s": 3.0287496261298656,
+      "efficiency": -0.0002473753503875514
+    },
+    {
+      "strategy": "auc_monitor_partial_drop0.01_B600",
+      "auc": 0.9700707226,
+      "ap": 0.9779961111702291,
+      "elapsed_s": 8.154211800545454,
+      "rebuild_count": 12,
+      "rebuild_time_s": 5.327656175941229,
+      "overhead_pct": 65.33624961256034,
+      "auc_gain": -0.0009494111999999166,
+      "total_overhead_s": 5.327656175941229,
+      "efficiency": -0.00017820429259066923
+    },
+    {
+      "strategy": "auc_monitor_partial_drop0.005_B600",
+      "auc": 0.9699854658,
+      "ap": 0.9779508808414086,
+      "elapsed_s": 9.843272741883993,
+      "rebuild_count": 16,
+      "rebuild_time_s": 6.957024775445461,
+      "overhead_pct": 70.677964106823,
+      "auc_gain": -0.0010346679999999608,
+      "total_overhead_s": 6.957024775445461,
+      "efficiency": -0.00014872277063778468
+    }
+  ],
+  "small_batch_baseline": {
+    "auc": 0.9785892348
+  },
+  "no_rebuild_baseline": {
+    "auc": 0.9710201338
+  }
+}

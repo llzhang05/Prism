@@ -1,0 +1,82 @@
+{
+  "dataset": "Stack-Overflow",
+  "num_nodes": 2584164,
+  "batch_size": 600,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "per_node_ms": 0.013140723444573822,
+  "avg_dirty_per_batch": 3494.2738095238096,
+  "affected_ratio": 0.0013521873261618882,
+  "ap": 0.9791397609020978,
+  "auc": 0.9710545800264553,
+  "baselines": {
+    "Full-Recomp (TGL)": {
+      "batch_ms": 26.316691661560082,
+      "refresh_ms": 33957.78445942367,
+      "batch_speedup": 1.0,
+      "index_speedup": 1.0
+    },
+    "StreamTGN (ours)": {
+      "batch_ms": 8.336463085615158,
+      "refresh_ms": 45.917285770569805,
+      "batch_speedup": 3.156817392614669,
+      "index_speedup": 739.5425032110358
+    },
+    "Random-Refresh": {
+      "batch_ms": 8.360775722817046,
+      "refresh_ms": 45.917285770569805,
+      "batch_speedup": 3.1476375558957157,
+      "index_speedup": 739.5425032110358
+    },
+    "Oracle": {
+      "batch_ms": 8.336463085615158,
+      "refresh_ms": 3.7986055213542733,
+      "batch_speedup": 3.156817392614669,
+      "index_speedup": 8939.539593813122
+    }
+  },
+  "periodic": {
+    "K=1": {
+      "avg_batch_ms": 33957.78445942367,
+      "refresh_ms": 33957.78445942367,
+      "avg_stale_nodes": 0.0,
+      "avg_stale_ratio": 0.0,
+      "index_speedup": 1.0
+    },
+    "K=5": {
+      "avg_batch_ms": 6793.687603453795,
+      "refresh_ms": 6791.556891884733,
+      "avg_stale_nodes": 6988.547619047619,
+      "avg_stale_ratio": 0.0027043746523237764,
+      "index_speedup": 5.0
+    },
+    "K=10": {
+      "avg_batch_ms": 3398.1754964575607,
+      "refresh_ms": 3395.7784459423665,
+      "avg_stale_nodes": 15724.232142857143,
+      "avg_stale_ratio": 0.006084842967728497,
+      "index_speedup": 10.0
+    },
+    "K=20": {
+      "avg_batch_ms": 1700.419442959444,
+      "refresh_ms": 1697.8892229711832,
+      "avg_stale_nodes": 33195.60119047619,
+      "avg_stale_ratio": 0.012845779598537938,
+      "index_speedup": 20.0
+    },
+    "K=50": {
+      "avg_batch_ms": 681.765810860574,
+      "refresh_ms": 679.1556891884734,
+      "avg_stale_nodes": 85609.70833333334,
+      "avg_stale_ratio": 0.03312858949096626,
+      "index_speedup": 49.99999999999999
+    }
+  },
+  "tgl_stages_ms": {
+    "sample": 9.749893617780902,
+    "mfg": 5.065109957999821,
+    "mail": 1.053388548802726,
+    "embed": 7.78491007564943,
+    "predict": 0.2840632879281346,
+    "update": 2.3793261733990683
+  }
+}

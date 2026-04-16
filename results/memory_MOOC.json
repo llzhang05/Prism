@@ -1,0 +1,11 @@
+{
+  "dataset": "MOOC",
+  "num_nodes": 7047,
+  "emb_dim": 100,
+  "tgl_peak_mb": 97.4,
+  "tgl_current_mb": 43.3,
+  "cache_size_mb": 3.6,
+  "cache_theoretical_mb": 2.7,
+  "stgn_total_mb": 47.0,
+  "overhead_pct": 8.4
+}

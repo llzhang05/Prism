@@ -1,0 +1,207 @@
+{
+  "dataset": "MOOC",
+  "num_nodes": 7047,
+  "total_edges": 411749,
+  "test_edges": 61763,
+  "history_edges": 288224,
+  "gpu": "NVIDIA vGPU-48GB",
+  "parallelism_analysis": [
+    {
+      "batch_size": 10,
+      "avg_colors": 3.85,
+      "avg_max_group": 5.15,
+      "avg_parallelism": 0.5149999999999999,
+      "avg_conflict_density": 0.20333333333333337,
+      "theoretical_speedup": 2.5974025974025974
+    },
+    {
+      "batch_size": 50,
+      "avg_colors": 8.9,
+      "avg_max_group": 17.45,
+      "avg_parallelism": 0.34900000000000003,
+      "avg_conflict_density": 0.09269387755102042,
+      "theoretical_speedup": 5.617977528089887
+    },
+    {
+      "batch_size": 100,
+      "avg_colors": 14.2,
+      "avg_max_group": 27.05,
+      "avg_parallelism": 0.2705,
+      "avg_conflict_density": 0.0708080808080808,
+      "theoretical_speedup": 7.042253521126761
+    },
+    {
+      "batch_size": 500,
+      "avg_colors": 48.9,
+      "avg_max_group": 56.3,
+      "avg_parallelism": 0.1126,
+      "avg_conflict_density": 0.04604128256513026,
+      "theoretical_speedup": 10.224948875255624
+    },
+    {
+      "batch_size": 1000,
+      "avg_colors": 87.65,
+      "avg_max_group": 70.05,
+      "avg_parallelism": 0.07005,
+      "avg_conflict_density": 0.03958288288288288,
+      "theoretical_speedup": 11.409013120365088
+    },
+    {
+      "batch_size": 5000,
+      "avg_colors": 393.5833333333333,
+      "avg_max_group": 85.5,
+      "avg_parallelism": 0.017099999999999997,
+      "avg_conflict_density": 0.028284136827365473,
+      "theoretical_speedup": 12.70378996400593
+    }
+  ],
+  "streaming_results": [
+    {
+      "strategy": "sequential",
+      "batch_size": 1,
+      "auc": 0.943844705749031,
+      "ap": 0.932908803843127,
+      "throughput": 2544.4119696436264,
+      "elapsed_s": 24.273977931588888,
+      "auc_diff": 0.0,
+      "speedup": 1.0
+    },
+    {
+      "strategy": "batched_strict",
+      "batch_size": 10,
+      "auc": 0.9522890728795133,
+      "ap": 0.9423116908851702,
+      "throughput": 24077.015528748496,
+      "elapsed_s": 2.565226571634412,
+      "auc_diff": 0.008444367130482244,
+      "speedup": 9.46270329490737
+    },
+    {
+      "strategy": "batched_relaxed",
+      "batch_size": 10,
+      "auc": 0.9438265255307454,
+      "ap": 0.9328832629111063,
+      "throughput": 6733.0890481179695,
+      "elapsed_s": 9.173055570572615,
+      "auc_diff": -1.8180218285590577e-05,
+      "speedup": 2.646225976157868,
+      "avg_colors": 3.299336247369273,
+      "avg_max_group": 5.6982353893475794
+    },
+    {
+      "strategy": "batched_strict",
+      "batch_size": 50,
+      "auc": 0.9581054479918512,
+      "ap": 0.9500193960843394,
+      "throughput": 115490.89434732053,
+      "elapsed_s": 0.5347867496311665,
+      "auc_diff": 0.014260742242820146,
+      "speedup": 45.39001377339705
+    },
+    {
+      "strategy": "batched_relaxed",
+      "batch_size": 50,
+      "auc": 0.9440319018479744,
+      "ap": 0.9331202637458752,
+      "throughput": 10789.921811208034,
+      "elapsed_s": 5.724137865006924,
+      "auc_diff": 0.0001871960989433541,
+      "speedup": 4.240634747807481,
+      "avg_colors": 9.52346278317152,
+      "avg_max_group": 17.097087378640776
+    },
+    {
+      "strategy": "batched_strict",
+      "batch_size": 100,
+      "auc": 0.9581199910654665,
+      "ap": 0.9497565270405682,
+      "throughput": 229580.50151188162,
+      "elapsed_s": 0.26902545988559723,
+      "auc_diff": 0.014275285316435515,
+      "speedup": 90.2292962975005
+    },
+    {
+      "strategy": "batched_relaxed",
+      "batch_size": 100,
+      "auc": 0.9450474188807483,
+      "ap": 0.934693855815548,
+      "throughput": 12883.72907836426,
+      "elapsed_s": 4.793876029551029,
+      "auc_diff": 0.0012027131317172701,
+      "speedup": 5.063538936333793,
+      "avg_colors": 15.166666666666666,
+      "avg_max_group": 26.68284789644013
+    },
+    {
+      "strategy": "batched_strict",
+      "batch_size": 500,
+      "auc": 0.9649214405888734,
+      "ap": 0.9593635065753604,
+      "throughput": 1096926.4840474583,
+      "elapsed_s": 0.05630550533533096,
+      "auc_diff": 0.021076734839842404,
+      "speedup": 431.111980738361
+    },
+    {
+      "strategy": "batched_relaxed",
+      "batch_size": 500,
+      "auc": 0.9450915242898025,
+      "ap": 0.9335391348611084,
+      "throughput": 18007.662912403885,
+      "elapsed_s": 3.429817644879222,
+      "auc_diff": 0.001246818540771466,
+      "speedup": 7.077337761041134,
+      "avg_colors": 46.79032258064516,
+      "avg_max_group": 57.42741935483871
+    },
+    {
+      "strategy": "batched_strict",
+      "batch_size": 1000,
+      "auc": 0.9628015416509483,
+      "ap": 0.9575699056337347,
+      "throughput": 2090898.2136373918,
+      "elapsed_s": 0.02953897975385189,
+      "auc_diff": 0.018956835901917324,
+      "speedup": 821.7608777914394
+    },
+    {
+      "strategy": "batched_relaxed",
+      "batch_size": 1000,
+      "auc": 0.9448746329473985,
+      "ap": 0.9333224825069413,
+      "throughput": 19540.81508624112,
+      "elapsed_s": 3.1607176940888166,
+      "auc_diff": 0.0010299271983674751,
+      "speedup": 7.67989434076512,
+      "avg_colors": 82.3225806451613,
+      "avg_max_group": 71.04838709677419
+    },
+    {
+      "strategy": "batched_strict",
+      "batch_size": 5000,
+      "auc": 0.9644670989729801,
+      "ap": 0.9595018408554471,
+      "throughput": 6604248.893479195,
+      "elapsed_s": 0.009352009743452072,
+      "auc_diff": 0.020622393223949098,
+      "speedup": 2595.5894612475804
+    },
+    {
+      "strategy": "batched_relaxed",
+      "batch_size": 5000,
+      "auc": 0.9469814172452597,
+      "ap": 0.936444125828114,
+      "throughput": 18788.39174297949,
+      "elapsed_s": 3.2872957326471806,
+      "auc_diff": 0.003136711496228739,
+      "speedup": 7.384178335559008,
+      "avg_colors": 373.15384615384613,
+      "avg_max_group": 85.07692307692308
+    }
+  ],
+  "sequential_baseline": {
+    "auc": 0.943844705749031,
+    "ap": 0.932908803843127,
+    "throughput": 2544.4119696436264
+  }
+}

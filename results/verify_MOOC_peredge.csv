@@ -1,0 +1,2 @@
+dataset,nodes,train_edges,test_edges,full_auc,incr_auc,full_ap,incr_ap,max_pred_diff,mean_pred_diff,full_ms,incr_ms,speedup
+MOOC,7047,288224,500,0.962612,0.916976,0.953799,0.901835,0.89214567,0.21575974,55.8699,0.4129,135.30

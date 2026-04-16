@@ -1,0 +1,2 @@
+dataset,nodes,train_edges,test_edges,full_auc,incr_auc,full_ap,incr_ap,max_pred_diff,mean_pred_diff,full_ms,incr_ms,speedup
+REDDIT,10985,470713,300,0.971233,0.951400,0.967196,0.948892,0.82792652,0.12928598,92.6326,0.3340,277.30

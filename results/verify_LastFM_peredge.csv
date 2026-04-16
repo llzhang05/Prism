@@ -1,0 +1,2 @@
+dataset,nodes,train_edges,test_edges,full_auc,incr_auc,full_ap,incr_ap,max_pred_diff,mean_pred_diff,full_ms,incr_ms,speedup
+LastFM,1980,905172,500,0.672402,0.753320,0.644553,0.748055,0.95059286,0.13437269,162.3745,0.3149,515.57

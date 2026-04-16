@@ -1,0 +1,2 @@
+dataset,nodes,edges,history,best_throughput,best_per_edge_ms,peak_mem_mb,mem_tensor_mb,utilization_pct,gru_pct,predict_pct,full_ms,incr_ms,speedup,full_auc,incr_auc,max_pred_diff
+WIKI,9228,157474,110232,347204,0.0029,129.6,3.5,0.3,53.3,46.7,22.97,0.285,81,0.9327,0.9327,0.00000000

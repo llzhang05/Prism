@@ -1,0 +1,82 @@
+{
+  "dataset": "LastFM",
+  "num_nodes": 1980,
+  "batch_size": 600,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "per_node_ms": 0.0132600923994305,
+  "avg_dirty_per_batch": 1497.1635802469136,
+  "affected_ratio": 0.7561432223469261,
+  "ap": 0.6665994251849184,
+  "auc": 0.6523678905635681,
+  "baselines": {
+    "Full-Recomp (TGL)": {
+      "batch_ms": 25.673896366245696,
+      "refresh_ms": 26.25498295087239,
+      "batch_speedup": 1.0,
+      "index_speedup": 1.0
+    },
+    "StreamTGN (ours)": {
+      "batch_ms": 21.5586622185858,
+      "refresh_ms": 19.852527411136254,
+      "batch_speedup": 1.1908854132939724,
+      "index_speedup": 1.3225007782205445
+    },
+    "Random-Refresh": {
+      "batch_ms": 24.67036862770946,
+      "refresh_ms": 19.852527411136254,
+      "batch_speedup": 1.0406774521159399,
+      "index_speedup": 1.3225007782205445
+    },
+    "Oracle": {
+      "batch_ms": 21.5586622185858,
+      "refresh_ms": 9.231932931422467,
+      "batch_speedup": 1.1908854132939724,
+      "index_speedup": 2.8439312921684095
+    }
+  },
+  "periodic": {
+    "K=1": {
+      "avg_batch_ms": 26.25498295087239,
+      "refresh_ms": 26.25498295087239,
+      "avg_stale_nodes": 0.0,
+      "avg_stale_ratio": 0.0,
+      "index_speedup": 1.0
+    },
+    "K=5": {
+      "avg_batch_ms": 6.695580627991115,
+      "refresh_ms": 5.250996590174478,
+      "avg_stale_nodes": 2994.3271604938273,
+      "avg_stale_ratio": 1.0,
+      "index_speedup": 5.0
+    },
+    "K=10": {
+      "avg_batch_ms": 4.250655337630955,
+      "refresh_ms": 2.625498295087239,
+      "avg_stale_nodes": 6737.236111111111,
+      "avg_stale_ratio": 1.0,
+      "index_speedup": 10.0
+    },
+    "K=20": {
+      "avg_batch_ms": 3.028192692450875,
+      "refresh_ms": 1.3127491475436195,
+      "avg_stale_nodes": 14223.05401234568,
+      "avg_stale_ratio": 1.0,
+      "index_speedup": 20.0
+    },
+    "K=50": {
+      "avg_batch_ms": 2.294715105342828,
+      "refresh_ms": 0.5250996590174478,
+      "avg_stale_nodes": 36680.50771604938,
+      "avg_stale_ratio": 1.0,
+      "index_speedup": 49.99999999999999
+    }
+  },
+  "tgl_stages_ms": {
+    "sample": 12.903744092088509,
+    "mfg": 2.2318021840996876,
+    "mail": 0.5668678137015399,
+    "embed": 8.165752229085163,
+    "predict": 0.8828846218070266,
+    "update": 0.9228454254637691
+  }
+}

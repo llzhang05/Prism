@@ -1,0 +1,39 @@
+{
+  "dataset": "REDDIT",
+  "num_nodes": 10985,
+  "batch_size": 600,
+  "test_edges": 100867,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "n_batches": 164,
+  "tgl": {
+    "per_batch_ms": 24.794768428475393,
+    "stages_ms": {
+      "sample": 10.210342864256079,
+      "mfg": 3.471284105283458,
+      "mail": 1.1037650131961194,
+      "embed": 8.227580454109646,
+      "predict": 0.7417850968677824,
+      "update": 1.0400108947623066
+    },
+    "recompute_ms": 23.012972436845303,
+    "fixed_ms": 1.781795991630089,
+    "ap": 0.9808074311565983,
+    "auc": 0.9855438358214083
+  },
+  "dirty_tracking": {
+    "avg_dirty_per_batch": 2441.786982248521,
+    "global_affected_ratio": 0.22228374895298325,
+    "batch_root_affected_ratio": 0.38456710734912253
+  },
+  "streamtgn_c1_inference": {
+    "per_batch_ms": 10.631828233172774,
+    "speedup": 2.3321265058734006,
+    "batch_root_affected": 0.38456710734912253
+  },
+  "streamtgn_c2_index": {
+    "per_node_ms": 0.01278498468713628,
+    "tgl_refresh_ms": 140.44305678819202,
+    "stream_refresh_ms": 31.218209177296046,
+    "speedup": 4.498754428563812
+  }
+}

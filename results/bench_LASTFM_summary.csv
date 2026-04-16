@@ -1,0 +1,2 @@
+dataset,nodes,edges,history,best_throughput,best_per_edge_ms,peak_mem_mb,mem_tensor_mb,utilization_pct,gru_pct,predict_pct,full_ms,incr_ms,speedup,frozen_auc,incr_auc,periodic_auc,auc_gain_vs_frozen,frozen_degradation,frozen_time_s,incr_time_s,periodic_time_s,speedup_vs_periodic
+LASTFM,1980,1293103,905172,328223,0.0030,19.6,0.8,0.0,54.5,45.5,171.17,0.298,575,0.6501,0.7735,0.7767,0.1234,-0.1121,48.68,84.60,280.13,3.3

@@ -1,0 +1,215 @@
+{
+  "dataset": "Stack-Overflow",
+  "num_nodes": 2584164,
+  "total_edges": 47903266,
+  "test_edges": 50000,
+  "history_edges": 500000,
+  "stream_batch": 500,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "params": {
+    "stream_batch": 500,
+    "probe_interval": 500,
+    "probe_sample_size": 64,
+    "partial_history_frac": 0.1
+  },
+  "results": [
+    {
+      "strategy": "sequential_exact",
+      "auc": 0.8709345244,
+      "ap": 0.8729046987141872,
+      "elapsed_s": 17.24221147596836,
+      "rebuild_count": 0,
+      "rebuild_time_s": 0.0,
+      "probe_count": 0,
+      "probe_time_s": 0.0,
+      "overhead_pct": 0.0
+    },
+    {
+      "strategy": "drift_l2_tau0.2_B500",
+      "auc": 0.8180530563999999,
+      "ap": 0.8318236959855263,
+      "elapsed_s": 12.312128383666277,
+      "rebuild_count": 94,
+      "rebuild_time_s": 0.2117895968258381,
+      "probe_count": 99,
+      "probe_time_s": 0.25772104039788246,
+      "overhead_pct": 3.8133994594028975,
+      "drift_threshold": 0.2
+    },
+    {
+      "strategy": "periodic_500_B500",
+      "auc": 0.8179827164,
+      "ap": 0.8318829372898126,
+      "elapsed_s": 13.070617947727442,
+      "rebuild_count": 99,
+      "rebuild_time_s": 0.22354191914200783,
+      "probe_count": 0,
+      "probe_time_s": 0.0,
+      "overhead_pct": 1.7102628202890329,
+      "rebuild_interval": 500
+    },
+    {
+      "strategy": "drift_l2_tau0.02_B500",
+      "auc": 0.8179827164,
+      "ap": 0.8318829372898126,
+      "elapsed_s": 12.591106615960598,
+      "rebuild_count": 99,
+      "rebuild_time_s": 0.22320565953850746,
+      "probe_count": 99,
+      "probe_time_s": 0.3005046732723713,
+      "overhead_pct": 4.159366994375371,
+      "drift_threshold": 0.02
+    },
+    {
+      "strategy": "drift_l2_tau0.05_B500",
+      "auc": 0.8179827164,
+      "ap": 0.8318829372898126,
+      "elapsed_s": 12.423941746354103,
+      "rebuild_count": 99,
+      "rebuild_time_s": 0.22322015464305878,
+      "probe_count": 99,
+      "probe_time_s": 0.2787233032286167,
+      "overhead_pct": 4.0401304845056485,
+      "drift_threshold": 0.05
+    },
+    {
+      "strategy": "drift_l2_tau0.1_B500",
+      "auc": 0.8179827164,
+      "ap": 0.8318829372898126,
+      "elapsed_s": 12.542567532509565,
+      "rebuild_count": 99,
+      "rebuild_time_s": 0.2231563813984394,
+      "probe_count": 99,
+      "probe_time_s": 0.2726193182170391,
+      "overhead_pct": 3.952744909130115,
+      "drift_threshold": 0.1
+    },
+    {
+      "strategy": "periodic_1000_B500",
+      "auc": 0.8176005866,
+      "ap": 0.8307303755967732,
+      "elapsed_s": 12.393935523927212,
+      "rebuild_count": 49,
+      "rebuild_time_s": 0.11060445383191109,
+      "probe_count": 0,
+      "probe_time_s": 0.0,
+      "overhead_pct": 0.8924078523595896,
+      "rebuild_interval": 1000
+    },
+    {
+      "strategy": "periodic_2000_B500",
+      "auc": 0.8170493745999999,
+      "ap": 0.8293556732555419,
+      "elapsed_s": 12.221184030175209,
+      "rebuild_count": 24,
+      "rebuild_time_s": 0.05411813408136368,
+      "probe_count": 0,
+      "probe_time_s": 0.0,
+      "overhead_pct": 0.4428223480453376,
+      "rebuild_interval": 2000
+    },
+    {
+      "strategy": "periodic_5000_B500",
+      "auc": 0.816689293,
+      "ap": 0.8278715039144025,
+      "elapsed_s": 12.118248373270035,
+      "rebuild_count": 9,
+      "rebuild_time_s": 0.02028554677963257,
+      "probe_count": 0,
+      "probe_time_s": 0.0,
+      "overhead_pct": 0.16739669096383306,
+      "rebuild_interval": 5000
+    },
+    {
+      "strategy": "drift_acc_tau0.01_B500",
+      "auc": 0.8161574789999999,
+      "ap": 0.8254195120667815,
+      "elapsed_s": 15.06633061543107,
+      "rebuild_count": 3,
+      "rebuild_time_s": 0.006884969770908356,
+      "probe_count": 99,
+      "probe_time_s": 2.882041599601507,
+      "overhead_pct": 19.17471906804933,
+      "drift_threshold": 0.01
+    },
+    {
+      "strategy": "no_rebuild_B500",
+      "auc": 0.8149842382,
+      "ap": 0.8216802430665062,
+      "elapsed_s": 4.935530375689268,
+      "rebuild_count": 0,
+      "rebuild_time_s": 0.0,
+      "probe_count": 0,
+      "probe_time_s": 0.0,
+      "overhead_pct": 0.0
+    },
+    {
+      "strategy": "drift_acc_tau0.02_B500",
+      "auc": 0.8149790468,
+      "ap": 0.8216537611937409,
+      "elapsed_s": 14.705795604735613,
+      "rebuild_count": 0,
+      "rebuild_time_s": 0.0,
+      "probe_count": 99,
+      "probe_time_s": 2.7985576428472996,
+      "overhead_pct": 19.030304228804173,
+      "drift_threshold": 0.02
+    },
+    {
+      "strategy": "drift_acc_tau0.05_B500",
+      "auc": 0.8149682358000001,
+      "ap": 0.8216606304275167,
+      "elapsed_s": 14.89522947371006,
+      "rebuild_count": 0,
+      "rebuild_time_s": 0.0,
+      "probe_count": 99,
+      "probe_time_s": 2.8295234218239784,
+      "overhead_pct": 18.99617207521415,
+      "drift_threshold": 0.05
+    },
+    {
+      "strategy": "drift_l2_partial_tau0.02_B500",
+      "auc": 0.7826990506,
+      "ap": 0.7963946295954365,
+      "elapsed_s": 81.84102161228657,
+      "rebuild_count": 99,
+      "rebuild_time_s": 69.79372999817133,
+      "probe_count": 99,
+      "probe_time_s": 69.85552906990051,
+      "overhead_pct": 170.63479452840394,
+      "drift_threshold": 0.02
+    },
+    {
+      "strategy": "drift_l2_partial_tau0.05_B500",
+      "auc": 0.7826990506,
+      "ap": 0.7963946295954365,
+      "elapsed_s": 82.2340934984386,
+      "rebuild_count": 99,
+      "rebuild_time_s": 70.01651747152209,
+      "probe_count": 99,
+      "probe_time_s": 70.07784566283226,
+      "overhead_pct": 170.36043953839456,
+      "drift_threshold": 0.05
+    },
+    {
+      "strategy": "drift_l2_partial_tau0.1_B500",
+      "auc": 0.7826990506,
+      "ap": 0.7963946295954365,
+      "elapsed_s": 82.05891062691808,
+      "rebuild_count": 99,
+      "rebuild_time_s": 69.80819224193692,
+      "probe_count": 99,
+      "probe_time_s": 69.8698195181787,
+      "overhead_pct": 170.21675122542578,
+      "drift_threshold": 0.1
+    }
+  ],
+  "sequential_baseline": {
+    "auc": 0.8709345244,
+    "ap": 0.8729046987141872
+  },
+  "no_rebuild_baseline": {
+    "auc": 0.8149842382,
+    "ap": 0.8216802430665062
+  }
+}

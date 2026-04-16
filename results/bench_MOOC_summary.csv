@@ -1,0 +1,2 @@
+dataset,nodes,edges,history,best_throughput,best_per_edge_ms,peak_mem_mb,mem_tensor_mb,utilization_pct,gru_pct,predict_pct,full_ms,incr_ms,speedup,full_auc,incr_auc,max_pred_diff
+MOOC,7047,411749,288224,298923,0.0033,23.4,2.7,0.0,54.3,45.7,57.70,0.316,182,0.9097,0.9097,0.00000000

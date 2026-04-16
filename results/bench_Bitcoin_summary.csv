@@ -1,0 +1,2 @@
+dataset,nodes,edges,history,best_throughput,best_per_edge_ms,peak_mem_mb,mem_tensor_mb,utilization_pct,gru_pct,predict_pct,full_ms,incr_ms,speedup,full_auc,incr_auc,max_pred_diff
+Bitcoin,6263,59778,41844,417910,0.0024,23.1,2.4,0.0,52.4,47.6,7.95,0.239,33,0.6573,0.6573,0.00000000

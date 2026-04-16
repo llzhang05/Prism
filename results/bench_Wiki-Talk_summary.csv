@@ -1,0 +1,2 @@
+dataset,nodes,edges,history,best_throughput,best_per_edge_ms,peak_mem_mb,mem_tensor_mb,utilization_pct,gru_pct,predict_pct,full_ms,incr_ms,speedup,frozen_auc,incr_auc,periodic_auc,auc_gain_vs_frozen,frozen_degradation,frozen_time_s,incr_time_s,periodic_time_s,speedup_vs_periodic
+Wiki-Talk,1094018,2000000,500000,355126,0.0028,854.1,417.3,1.8,53.6,46.4,99.37,0.287,346,0.5906,0.8715,0.8675,0.2809,-0.0858,143.44,247.95,1396.34,5.6

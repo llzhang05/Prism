@@ -1,0 +1,42 @@
+{
+  "dataset": "WIKI",
+  "method": "TGAT",
+  "config": "config/TGAT.yml",
+  "use_memory": false,
+  "num_nodes": 9228,
+  "batch_size": 600,
+  "test_edges": 23621,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "n_batches": 35,
+  "tgl": {
+    "per_batch_ms": 37.51126123326165,
+    "stages_ms": {
+      "sample": 4.576140855039869,
+      "mfg": 22.42500569139208,
+      "mail": 0.008673540183476039,
+      "embed": 10.22006699017116,
+      "predict": 0.2701889191355024,
+      "update": 0.011185237339564731
+    },
+    "recompute_ms": 37.22988707678658,
+    "fixed_ms": 0.28137415647506714,
+    "ap": 0.8973262032752676,
+    "auc": 0.9160090836620645
+  },
+  "dirty_tracking": {
+    "avg_dirty_per_batch": 346.125,
+    "global_affected_ratio": 0.03750812743823147,
+    "batch_root_affected_ratio": 0.14419072781414488
+  },
+  "streamtgn_c1_inference": {
+    "per_batch_ms": 5.649578670515352,
+    "speedup": 6.639656409960194,
+    "batch_root_affected": 0.14419072781414488
+  },
+  "streamtgn_c2_index": {
+    "per_node_ms": 0.02068327059821477,
+    "tgl_refresh_ms": 190.86522108032588,
+    "stream_refresh_ms": 7.158997035807087,
+    "speedup": 26.660888407367278
+  }
+}

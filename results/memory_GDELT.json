@@ -1,0 +1,11 @@
+{
+  "dataset": "GDELT",
+  "num_nodes": 16682,
+  "emb_dim": 100,
+  "tgl_peak_mb": 182.3,
+  "tgl_current_mb": 85.3,
+  "cache_size_mb": 6.5,
+  "cache_theoretical_mb": 6.4,
+  "stgn_total_mb": 91.8,
+  "overhead_pct": 7.6
+}

@@ -1,0 +1,11 @@
+{
+  "dataset": "Stack-Overflow",
+  "num_nodes": 2584164,
+  "emb_dim": 100,
+  "tgl_peak_mb": 3150.0,
+  "tgl_current_mb": 3046.4,
+  "cache_size_mb": 988.5,
+  "cache_theoretical_mb": 985.8,
+  "stgn_total_mb": 4034.9,
+  "overhead_pct": 32.4
+}

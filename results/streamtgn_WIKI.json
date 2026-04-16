@@ -1,0 +1,42 @@
+{
+  "dataset": "WIKI",
+  "num_nodes": 9228,
+  "batch_size": 600,
+  "test_edges": 23621,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "tgl": {
+    "per_batch_ms": 22.792072274855204,
+    "ap": 0.9734715447131748,
+    "auc": 0.9747792909211921,
+    "stages": {
+      "sample": 8.850295841693878,
+      "mfg": 1.3682842254638672,
+      "mail": 0.2807671470301492,
+      "embed": 7.312884075301034,
+      "predict": 2.3752301931381226,
+      "update": 2.6046107922281534
+    }
+  },
+  "streamtgn": {
+    "per_batch_ms": 45.44483923486301,
+    "ap": 0.5,
+    "auc": 0.5,
+    "stages": {
+      "identify": 0.22811187165124078,
+      "recompute": 14.516847793545042,
+      "predict": 0.23405998945236206,
+      "update": 30.465819580214365
+    },
+    "affected_ratio": 0.17662703572976654,
+    "affected_count": 1629.9142857142858,
+    "init_time_ms": 83.03540199995041,
+    "cache_stats": {
+      "num_dirty": 833,
+      "affected_ratio": 0.09026874729085392,
+      "total_recomputed": 72725,
+      "total_queries": 70863,
+      "cache_hit_ratio": -0.02627605379394038
+    }
+  },
+  "speedup": 0.5015326857481821
+}

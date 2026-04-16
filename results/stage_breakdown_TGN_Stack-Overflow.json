@@ -1,0 +1,48 @@
+{
+  "dataset": "Stack-Overflow",
+  "method": "TGN",
+  "num_nodes": 2584164,
+  "affected_ratio": 0.0013486867892677345,
+  "avg_dirty": 3485.227848101266,
+  "tgl_stages_ms": {
+    "Msg. Computation": 15.858910034728954,
+    "Msg. Aggregation": 0.2207972015006633,
+    "Emb. Generation": 3.2143606981144677,
+    "Mem. Update": 2.742384619350675,
+    "Prediction": 0.24904650223406055
+  },
+  "tgl_total_ms": 22.28549905592882,
+  "stream_stages_ms": {
+    "Msg. Computation": 0.02138870245602445,
+    "Msg. Aggregation": 0.00029778626877123056,
+    "Emb. Generation": 0.004335165809488395,
+    "Mem. Update": 2.742384619350675,
+    "Prediction": 0.24904650223406055
+  },
+  "stream_total_ms": 3.0174527761190197,
+  "speedup": 7.385533663460321,
+  "stage_names": [
+    "Msg. Computation",
+    "Msg. Aggregation",
+    "Emb. Generation",
+    "Mem. Update",
+    "Prediction"
+  ],
+  "scalable_stages": [
+    "Msg. Computation",
+    "Msg. Aggregation",
+    "Emb. Generation"
+  ],
+  "fixed_stages": [
+    "Mem. Update",
+    "Prediction"
+  ],
+  "raw_stages_ms": {
+    "sample": 7.252526905717729,
+    "mfg": 8.606383129011226,
+    "mail": 0.2207972015006633,
+    "embed": 3.2143606981144677,
+    "predict": 0.24904650223406055,
+    "update": 2.742384619350675
+  }
+}

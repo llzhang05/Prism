@@ -1,0 +1,77 @@
+{
+  "dataset": "GDELT",
+  "fractions": [
+    0.01,
+    0.05,
+    0.1,
+    0.5,
+    1.0
+  ],
+  "results": [
+    {
+      "edges_used": 1912908,
+      "edges_total": 191290882,
+      "edge_fraction": 0.009999995713334627,
+      "num_nodes": 16682,
+      "avg_dirty": 1312.240506329114,
+      "affected_ratio": 0.07866206128336614,
+      "analytical_speedup": 12.712608641129771,
+      "real_c2_speedup": 4.117038899954256,
+      "tgl_refresh_ms": 132.21387813488641,
+      "stream_refresh_ms": 32.113827764987946,
+      "ap": 0.9837194371839006
+    },
+    {
+      "edges_used": 9564544,
+      "edges_total": 191290882,
+      "edge_fraction": 0.04999999947723593,
+      "num_nodes": 16682,
+      "avg_dirty": 1433.5316455696202,
+      "affected_ratio": 0.08593284052089799,
+      "analytical_speedup": 11.636994587148672,
+      "real_c2_speedup": 5.549764144488037,
+      "tgl_refresh_ms": 165.1699294646581,
+      "stream_refresh_ms": 29.76161241531372,
+      "ap": 0.9817969792270081
+    },
+    {
+      "edges_used": 19129088,
+      "edges_total": 191290882,
+      "edge_fraction": 0.09999999895447186,
+      "num_nodes": 16682,
+      "avg_dirty": 1491.1772151898733,
+      "affected_ratio": 0.08938839558745194,
+      "analytical_speedup": 11.187134453282175,
+      "real_c2_speedup": 42.00098542414902,
+      "tgl_refresh_ms": 222.82157589991888,
+      "stream_refresh_ms": 5.305151144663493,
+      "ap": 0.979972411174588
+    },
+    {
+      "edges_used": 95645441,
+      "edges_total": 191290882,
+      "edge_fraction": 0.5,
+      "num_nodes": 16682,
+      "avg_dirty": 1586.253164556962,
+      "affected_ratio": 0.09508770918097123,
+      "analytical_speedup": 10.516606285012049,
+      "real_c2_speedup": 40.81870637382197,
+      "tgl_refresh_ms": 228.95752638578415,
+      "stream_refresh_ms": 5.609132349491119,
+      "ap": 0.9843325362283002
+    },
+    {
+      "edges_used": 191290882,
+      "edges_total": 191290882,
+      "edge_fraction": 1.0,
+      "num_nodes": 16682,
+      "avg_dirty": 1604.9493670886077,
+      "affected_ratio": 0.09620845025108546,
+      "analytical_speedup": 10.39409737284192,
+      "real_c2_speedup": 6.727553914055353,
+      "tgl_refresh_ms": 205.53847153981528,
+      "stream_refresh_ms": 30.551739037036896,
+      "ap": 0.9855540237464401
+    }
+  ]
+}

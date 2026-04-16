@@ -1,0 +1,48 @@
+{
+  "dataset": "MOOC",
+  "method": "TGN",
+  "num_nodes": 7047,
+  "affected_ratio": 0.11577078681621648,
+  "avg_dirty": 815.8367346938776,
+  "tgl_stages_ms": {
+    "Msg. Computation": 17.870352964620203,
+    "Msg. Aggregation": 0.32907937254224506,
+    "Emb. Generation": 7.533914960768758,
+    "Mem. Update": 2.2348823139862137,
+    "Prediction": 0.3137913133416857
+  },
+  "tgl_total_ms": 28.282020925259108,
+  "stream_stages_ms": {
+    "Msg. Computation": 2.068864823397588,
+    "Msg. Aggregation": 0.03809777788420254,
+    "Emb. Generation": 0.8722072628146639,
+    "Mem. Update": 2.2348823139862137,
+    "Prediction": 0.3137913133416857
+  },
+  "stream_total_ms": 5.5278434914243535,
+  "speedup": 5.116284672157335,
+  "stage_names": [
+    "Msg. Computation",
+    "Msg. Aggregation",
+    "Emb. Generation",
+    "Mem. Update",
+    "Prediction"
+  ],
+  "scalable_stages": [
+    "Msg. Computation",
+    "Msg. Aggregation",
+    "Emb. Generation"
+  ],
+  "fixed_stages": [
+    "Mem. Update",
+    "Prediction"
+  ],
+  "raw_stages_ms": {
+    "sample": 15.985889170242816,
+    "mfg": 1.8844637943773854,
+    "mail": 0.32907937254224506,
+    "embed": 7.533914960768758,
+    "predict": 0.3137913133416857,
+    "update": 2.2348823139862137
+  }
+}

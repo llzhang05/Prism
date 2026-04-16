@@ -1,0 +1,39 @@
+{
+  "dataset": "GDELT",
+  "num_nodes": 16682,
+  "batch_size": 600,
+  "test_edges": 50000,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "n_batches": 79,
+  "tgl": {
+    "per_batch_ms": 21.904157262436954,
+    "stages_ms": {
+      "sample": 10.593650791841217,
+      "mfg": 1.9971230833590787,
+      "mail": 0.23753568530082703,
+      "embed": 7.132605614164207,
+      "predict": 0.2914079571072059,
+      "update": 1.651834130664415
+    },
+    "recompute_ms": 19.96091517466533,
+    "fixed_ms": 1.943242087771621,
+    "ap": 0.9831027365604866,
+    "auc": 0.9855982308201057
+  },
+  "dirty_tracking": {
+    "avg_dirty_per_batch": 1326.4761904761904,
+    "global_affected_ratio": 0.07951541724470629,
+    "batch_root_affected_ratio": 0.3000939224660699
+  },
+  "streamtgn_c1_inference": {
+    "per_batch_ms": 7.933391418549437,
+    "speedup": 2.7610080111794066,
+    "batch_root_affected": 0.3000939224660699
+  },
+  "streamtgn_c2_index": {
+    "per_node_ms": 0.011089397319258518,
+    "tgl_refresh_ms": 184.9933260798706,
+    "stream_refresh_ms": 14.709821510726917,
+    "speedup": 12.576177484204482
+  }
+}

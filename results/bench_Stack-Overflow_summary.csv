@@ -1,0 +1,2 @@
+dataset,nodes,edges,history,best_throughput,best_per_edge_ms,peak_mem_mb,mem_tensor_mb,utilization_pct,gru_pct,predict_pct,full_ms,incr_ms,speedup,full_auc,incr_auc,max_pred_diff
+Stack-Overflow,2584164,47903266,500000,366080,0.0027,1990.1,985.8,4.1,52.7,47.3,90.97,0.268,339,0.6734,0.6734,0.00000000

@@ -1,0 +1,11 @@
+{
+  "dataset": "REDDIT",
+  "num_nodes": 10985,
+  "emb_dim": 100,
+  "tgl_peak_mb": 577.8,
+  "tgl_current_mb": 510.6,
+  "cache_size_mb": 4.2,
+  "cache_theoretical_mb": 4.2,
+  "stgn_total_mb": 514.8,
+  "overhead_pct": 0.8
+}

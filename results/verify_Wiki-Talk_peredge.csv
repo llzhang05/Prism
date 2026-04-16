@@ -1,0 +1,2 @@
+dataset,nodes,train_edges,test_edges,full_auc,incr_auc,full_ap,incr_ap,max_pred_diff,mean_pred_diff,full_ms,incr_ms,speedup
+Wiki-Talk,1094018,200000,200,0.876200,0.914100,0.902867,0.930807,0.51274258,0.03916331,38.9155,0.3528,110.30

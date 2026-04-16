@@ -1,0 +1,11 @@
+{
+  "dataset": "WIKI",
+  "num_nodes": 9228,
+  "emb_dim": 100,
+  "tgl_peak_mb": 241.5,
+  "tgl_current_mb": 169.5,
+  "cache_size_mb": 3.5,
+  "cache_theoretical_mb": 3.5,
+  "stgn_total_mb": 173.0,
+  "overhead_pct": 2.1
+}

@@ -1,0 +1,2 @@
+dataset,nodes,train_edges,test_edges,full_auc,incr_auc,full_ap,incr_ap,max_pred_diff,mean_pred_diff,full_ms,incr_ms,speedup
+Stack-Overflow,2584164,200000,200,0.629500,0.639400,0.638928,0.657740,0.61536494,0.03008091,37.1219,0.3344,111.01

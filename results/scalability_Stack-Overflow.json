@@ -1,0 +1,77 @@
+{
+  "dataset": "Stack-Overflow",
+  "fractions": [
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "results": [
+    {
+      "edges_used": 1735339,
+      "edges_total": 17353391,
+      "edge_fraction": 0.09999999423743751,
+      "num_nodes": 2584164,
+      "avg_dirty": 3378.1772151898736,
+      "affected_ratio": 0.00130726115493826,
+      "analytical_speedup": 764.9580928970757,
+      "real_c2_speedup": 268.88651749200625,
+      "tgl_refresh_ms": 18959.32657768329,
+      "stream_refresh_ms": 70.51051408052444,
+      "ap": 0.9796107565493357
+    },
+    {
+      "edges_used": 4338347,
+      "edges_total": 17353391,
+      "edge_fraction": 0.24999995678078135,
+      "num_nodes": 2584164,
+      "avg_dirty": 3760.278481012658,
+      "affected_ratio": 0.0014551237773657779,
+      "analytical_speedup": 687.2267607435485,
+      "real_c2_speedup": 163.01458616941105,
+      "tgl_refresh_ms": 21036.94149851799,
+      "stream_refresh_ms": 129.04944270849228,
+      "ap": 0.9746219903133819
+    },
+    {
+      "edges_used": 8676695,
+      "edges_total": 17353391,
+      "edge_fraction": 0.4999999711871876,
+      "num_nodes": 2584164,
+      "avg_dirty": 4358.848101265823,
+      "affected_ratio": 0.001686753666278852,
+      "analytical_speedup": 592.8547955707727,
+      "real_c2_speedup": 230.22974990298624,
+      "tgl_refresh_ms": 22467.245193819206,
+      "stream_refresh_ms": 97.586194674174,
+      "ap": 0.9686820762711031
+    },
+    {
+      "edges_used": 13015043,
+      "edges_total": 17353391,
+      "edge_fraction": 0.7499999855935938,
+      "num_nodes": 2584164,
+      "avg_dirty": 4614.354430379747,
+      "affected_ratio": 0.0017856275493272668,
+      "analytical_speedup": 560.0272018522278,
+      "real_c2_speedup": 245.49125349801855,
+      "tgl_refresh_ms": 24136.034237841766,
+      "stream_refresh_ms": 98.31728786230087,
+      "ap": 0.9623170629803655
+    },
+    {
+      "edges_used": 17353391,
+      "edges_total": 17353391,
+      "edge_fraction": 1.0,
+      "num_nodes": 2584164,
+      "avg_dirty": 5059.898734177215,
+      "affected_ratio": 0.001958040872861481,
+      "analytical_speedup": 510.71456876106987,
+      "real_c2_speedup": 249.72736548394238,
+      "tgl_refresh_ms": 24098.862407108147,
+      "stream_refresh_ms": 96.5006873011589,
+      "ap": 0.9585460735782573
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+strategy,rebuild_interval,rebuilds,affected_ratio,speedup,eliminated_pct,T_sample_ms,T_mfg_ms,T_mail_ms,T_embed_ms,T_predict_ms,T_update_ms,T_tgl_total_ms,T_stream_total_ms
+no_rebuild,0,0,0.9980,1.53,34.8,2.66,1.59,0.35,6.77,1.19,0.68,13.25,8.64
+rebuild_3000,3000,20,0.7765,2.13,53.2,2.16,2.83,0.34,6.49,0.28,0.66,12.77,5.98
+rebuild_6000,6000,10,0.8806,1.66,39.8,3.66,1.08,0.30,7.41,1.28,1.14,14.88,8.95
+rebuild_12000,12000,5,0.9349,2.40,58.3,6.60,1.79,0.92,6.47,0.28,0.64,16.70,6.97
+rebuild_30000,30000,2,0.9744,2.29,56.4,4.80,2.51,0.76,4.44,0.27,1.74,14.52,6.34

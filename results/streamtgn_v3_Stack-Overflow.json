@@ -1,0 +1,39 @@
+{
+  "dataset": "Stack-Overflow",
+  "num_nodes": 2584164,
+  "batch_size": 600,
+  "test_edges": 50000,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "n_batches": 79,
+  "tgl": {
+    "per_batch_ms": 22.97817882669123,
+    "stages_ms": {
+      "sample": 9.752174815799616,
+      "mfg": 3.656545960450474,
+      "mail": 0.20355335142039047,
+      "embed": 8.416265485030188,
+      "predict": 0.25434792041778564,
+      "update": 0.6952912935727759
+    },
+    "recompute_ms": 22.02853961270067,
+    "fixed_ms": 0.9496392139905615,
+    "ap": 0.9788982406141484,
+    "auc": 0.9711333664021163
+  },
+  "dirty_tracking": {
+    "avg_dirty_per_batch": 3496.690476190476,
+    "global_affected_ratio": 0.0013531225093262177,
+    "batch_root_affected_ratio": 0.24023901017591598
+  },
+  "streamtgn_c1_inference": {
+    "per_batch_ms": 6.241753766166726,
+    "speedup": 3.681365796780368,
+    "batch_root_affected": 0.24023901017591598
+  },
+  "streamtgn_c2_index": {
+    "per_node_ms": 0.012238077562611483,
+    "tgl_refresh_ms": 31625.19946650834,
+    "stream_refresh_ms": 42.79276926006393,
+    "speedup": 739.0313834169725
+  }
+}
